@@ -1,0 +1,110 @@
+.component {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 0;
+    border-bottom: 1px solid rgb(208, 210, 235);
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .input {
+    width: 90%;
+    height: 24px;
+    outline: 0;
+    padding: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+  .options {
+    background-color: black;
+    width: 100%;
+    min-height: 50px;
+    height: fit-content;
+    max-height: 250px;
+    border: 1px solid lightgray;
+    overflow-y: scroll;
+    display: none;
+    position: absolute;
+    top: 30px;
+    z-index: 6;
+  }
+
+  .options::-webkit-scrollbar-track {
+    background: lightgray;
+  }
+  
+  .options::-webkit-scrollbar {
+    width: 0.7em;
+    height: 0.7em;
+  }
+  
+  .options::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .options::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .option {
+    display: flex;
+    width: 99%;
+    background-color: black;
+    cursor: pointer;
+    height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px;
+  }
+  .option:hover {
+    background-color: gray;
+    color: black;
+  }
+
+  .button {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    z-index: 5;
+    font-size: 16px;
+  }
+
+  .up {
+    top: 10px;
+    right: 5px;
+  }
+
+  .down {
+    top: 5px;
+    right: 5px;
+  }
+
+  .button > i {
+    height: 16px;
+    width: 16px;
+    font-size: 16px;
+  }
+
+  .checkbox {
+    margin: auto 5px;
+    font-size: 16px;
+  }
+
+  .name {
+    width: 100%;
+    margin: auto 5px;
+    cursor: pointer;
+  }

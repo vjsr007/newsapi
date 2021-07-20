@@ -1,0 +1,23 @@
+.customButton {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(65, 72, 136);
+  color: whitesmoke;
+  width: 100%;
+  height: 50px;
+  outline: 0;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+label {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 18px;
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+.component {
+    display: flex;
+    width: 100%;
+    background-color: #ddddf7;
+    color: black;
+    cursor: pointer;
+  }
