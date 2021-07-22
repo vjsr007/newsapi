@@ -1,5 +1,6 @@
 import { CustomLoader } from "../customLoader/customLoader";
 import styles from "./dropDown.css";
+import fa from "../../lib/fontawesome/css/font-awesome.min.css";
 
 export class DropDown extends HTMLElement {
   data = null;
@@ -186,9 +187,8 @@ export class DropDown extends HTMLElement {
     const link = document.createElement("style");
     link.innerHTML = styles;
 
-    const fontAwesome = document.createElement("link");
-    fontAwesome.rel = "stylesheet";
-    fontAwesome.href = "./lib/fontawesome/css/font-awesome.min.css";
+    const fontAwesome = document.createElement("style");
+    fontAwesome.innerHTML = fa;
 
     return [link, fontAwesome];
   };

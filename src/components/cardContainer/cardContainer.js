@@ -19,11 +19,7 @@ export class CardContainer extends HTMLElement {
     const link = document.createElement("style");
     link.innerHTML = styles;
 
-    const fontAwesome = document.createElement("link");
-    fontAwesome.rel = "stylesheet";
-    fontAwesome.href = "./lib/fontawesome/css/font-awesome.min.css";
-
-    return [link, fontAwesome];
+    return [link];
   };
 
   render = (shadow) => {
@@ -35,7 +31,7 @@ export class CardContainer extends HTMLElement {
   };
 
   showLoader = () => {
-    return (new CustomLoader()).outerHTML;
+    return new CustomLoader().outerHTML;
   };
 
   populateRows = (data) => {

@@ -44,11 +44,7 @@ export class CustomButton extends HTMLElement {
     const link = document.createElement("style");
     link.innerHTML = styles;
 
-    const fontAwesome = document.createElement("link");
-    fontAwesome.rel = "stylesheet";
-    fontAwesome.href = "./lib/fontawesome/css/font-awesome.min.css";
-
-    return [link, fontAwesome];
+    return [link];
   };
 
   attributeChangedCallback(name, oldVal, newVal) {

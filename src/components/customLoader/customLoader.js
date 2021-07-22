@@ -65,17 +65,13 @@ export class CustomLoader extends HTMLElement {
     const link = document.createElement("style");
     link.innerHTML = styles;
 
-    const fontAwesome = document.createElement("link");
-    fontAwesome.rel = "stylesheet";
-    fontAwesome.href = "./lib/fontawesome/css/font-awesome.min.css";
-
-    return [link, fontAwesome];
+    return [link];
   };
 
   attributeChangedCallback(name, oldVal, newVal) {
     if (oldVal !== newVal) {
       switch (name) {
-        case 'default-loader':
+        case "default-loader":
           this.defaultLoader = newVal;
         default:
           this.defaultLoader = newVal;
