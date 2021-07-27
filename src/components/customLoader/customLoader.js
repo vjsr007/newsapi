@@ -1,25 +1,25 @@
-import styles from "./customLoader.css";
+import styles from './customLoader.css'
 
 export class CustomLoader extends HTMLElement {
-  defaultLoader = "cube";
+  defaultLoader = 'cube'
 
   static get observedAttributes() {
-    return ["default-loader"];
+    return ['default-loader']
   }
 
   constructor() {
-    super();
-    const shadow = this.attachShadow({ mode: "open" });
-    this.render(shadow);
+    super()
+    const shadow = this.attachShadow({ mode: 'open' })
+    this.render(shadow)
   }
 
-  render = (shadow) => {
-    shadow.innerHTML = "";
-    this.getStyles().forEach((style) => shadow.appendChild(style));
-    const component = document.createElement("div");
-    component.innerHTML = this.populate();
-    shadow.appendChild(component);
-  };
+  render = shadow => {
+    shadow.innerHTML = ''
+    this.getStyles().forEach(style => shadow.appendChild(style))
+    const component = document.createElement('div')
+    component.innerHTML = this.populate()
+    shadow.appendChild(component)
+  }
 
   spin = () => `
       <div class="sk-fading-circle">
@@ -36,7 +36,7 @@ export class CustomLoader extends HTMLElement {
         <div class="sk-circle11 sk-circle"></div>
         <div class="sk-circle12 sk-circle"></div>
       </div>
-    `;
+    `
 
   cube = () => `
       <div class="sk-cube-grid">
@@ -50,36 +50,36 @@ export class CustomLoader extends HTMLElement {
         <div class="sk-cube sk-cube8"></div>
         <div class="sk-cube sk-cube9"></div>
       </div>
-    `;
+    `
 
   populate = () => {
     switch (this.defaultLoader) {
-      case "spin":
-        return this.spin();
+      case 'spin':
+        return this.spin()
       default:
-        return this.cube();
+        return this.cube()
     }
-  };
+  }
 
   getStyles = () => {
-    const link = document.createElement("style");
-    link.innerHTML = styles;
+    const link = document.createElement('style')
+    link.innerHTML = styles
 
-    return [link];
-  };
+    return [link]
+  }
 
   attributeChangedCallback(name, oldVal, newVal) {
     if (oldVal !== newVal) {
       switch (name) {
-        case "default-loader":
-          this.defaultLoader = newVal;
+        case 'default-loader':
+          this.defaultLoader = newVal
         default:
-          this.defaultLoader = newVal;
+          this.defaultLoader = newVal
       }
-      const shadow = this.shadowRoot;
-      this.render(shadow);
+      const shadow = this.shadowRoot
+      this.render(shadow)
     }
   }
 }
 
-window.customElements.define("custom-loader", CustomLoader);
+window.customElements.define('custom-loader', CustomLoader)

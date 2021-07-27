@@ -1,65 +1,66 @@
 .post {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 98%;
-    background-color: whitesmoke;
-    color: black;
-    padding-left: 15px;
-    padding-top: 15px;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 98%;
+  background-color: whitesmoke;
+  color: black;
+  padding-left: 15px;
+  padding-top: 15px;
+}
 
-  .post > * {
-    margin: 5px;
-  }
+.post > * {
+  margin: 5px;
+}
 
-  .header {
-    width: 95%;
-    font-family: ProximaNovaCond, "Arial Narrow", sans-serif;
-  }
+.header {
+  width: 95%;
+  font-family: ProximaNovaCond, 'Arial Narrow', sans-serif;
+}
 
-  .title {
-    font-weight: 500;
-    font-size: 2rem;
-    line-height: 2.25rem;
-    margin: 0;
-    color: #3F3F42;
-    font-size: 2.75rem;
-    line-height: 3rem;
-  }
+.title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  margin: 0;
+  color: #3f3f42;
+  font-size: 2.75rem;
+  line-height: 3rem;
+}
 
-  .content {
-    display: flex;
-    flex-direction: row;
-  }
+.content {
+  display: flex;
+  flex-direction: row;
+}
 
-  .img-section {
-    min-height: 232px;
-    min-width: 462px;
-    position: relative;
-    overflow: hidden;
-  }
+.img-section {
+  min-height: 232px;
+  min-width: 462px;
+  position: relative;
+  overflow: hidden;
+}
 
-  .image {
-    height: 232px;
-    width: 462px;
+.image {
+  height: 232px;
+  width: 462px;
 
-    overflow: hidden;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    object-fit: cover;
-  }
+  overflow: hidden;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  object-fit: cover;
+}
 
-  .article {
-    width: 60%;  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
+.article {
+  width: 60%;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+}
 
-  .text {
-    text-align: left;
-    padding:  0 10px 10px 10px;
-    width: 95%;
-  }
+.text {
+  text-align: left;
+  padding: 0 10px 10px 10px;
+  width: 95%;
+}

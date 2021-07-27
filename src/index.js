@@ -1,11 +1,11 @@
-import { getNews, renderNews, initComponents } from "./services";
+import { getNews, renderNews, initComponents } from './services'
 
 const initApp = () => {
-  initComponents();
-  getNews().then((resolve) => {
-    const news = resolve;
-    renderNews(news || []);
-  });
-};
+  initComponents()
+  getNews().then(resolve => {
+    const news = resolve
+    renderNews(news || [])
+  })
+}
 
-document.addEventListener("DOMContentLoaded", initApp);
+document.addEventListener('DOMContentLoaded', initApp)
