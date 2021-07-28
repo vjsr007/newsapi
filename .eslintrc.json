@@ -1,9 +1,10 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+    "es6": true,
+    "node": true,
+    "mocha": true
   },
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb", "prettier", "stadard"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
